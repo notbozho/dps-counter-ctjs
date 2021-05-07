@@ -103,7 +103,7 @@ function myRenderOverlay() {
     let finalDPS = "DPS: " + numberWithCommas(count);
     let finalTotal = "TOTAL: " + numberWithCommas(total);
     Renderer.drawStringWithShadow(finalDPS , 10, 180)
-    Renderer.drawStringWithShadow(finalTotal , 10, 220)
+    Renderer.drawStringWithShadow(finalTotal , 10, 200)
 }
 
 function isValid(string) {
