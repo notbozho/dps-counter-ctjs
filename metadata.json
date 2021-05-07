@@ -1,0 +1,6 @@
+{
+    "name": "DPSCounter",
+    "creator": "Bozho",
+    "description": "A poor attempt at making DPS calculator for Hypixel Skyblock using ChatTriggers.",
+    "entry": "index.js"
+}
