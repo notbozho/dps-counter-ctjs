@@ -45,8 +45,10 @@ register('command', (arg, e) => {
     else {
         ChatLib.chat(`DPS Check will start in 1 second and it will last ${arg} seconds.`)
         setTimeout(() => {
+            count = 0;
             usedUUID = [];
             totalSeconds = 0;
+            total = 0;
             dis = 0;
             now = new Date().getTime();
             secondLater = new Date(now + 1000).getTime();
