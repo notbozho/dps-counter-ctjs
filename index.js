@@ -1,9 +1,10 @@
-register('messageSent', (message, event) => {
-    if (message.toLowerCase().contains('!getentities')) {
+const ArmourStandClass = Java.type("net.minecraft.entity.item.EntityArmorStand")
 
-        World.getAllEntities().forEach((entity) => {
-            let entityName = entity.getName()
-            ChatLib.chat(`ENTITY: ${entityName}`);
+register('command', (arg, event) => {
+
+        World.getAllEntitiesOfType(ArmourStandClass.class).forEach((entity) => {
+            let entityName = entity.getName();
+            let entityClassName = entity.getClassName();
+            ChatLib.chat(`ENTITY: ${entityClassName} - ${entityName}`);
         });
-    }
-});
+}).setName("ttee");
